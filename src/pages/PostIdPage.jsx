@@ -75,7 +75,7 @@ function PostsIdPage(params) {
     }
         if(localStorage.jwtToken) {
             const res = await axios.post(
-                `http://3.16.57.86:3000/api/new-like`,
+                `http://localhost:3000/api/new-like`,
                 body,
                 {
                     headers: {

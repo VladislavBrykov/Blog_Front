@@ -25,7 +25,7 @@ function NewPostsPage(params) {// Страница постов
 
         const body = { "title": title, "body": content, "phoneEmail": localStorage.id }
         console.log(body);
-        const res = await axios.post(`http://3.16.57.86:3000/api/new-post`, body, {
+        const res = await axios.post(`http://localhost:3000/api/new-post`, body, {
                 headers: {
                     Authorization: localStorage.jwtToken
                 }

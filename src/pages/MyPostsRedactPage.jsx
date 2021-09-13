@@ -19,7 +19,7 @@ export default ({ }) => {
     const newFile = useRef()
 
     const loadData = async () => {
-        const res = await axios.get("http://3.16.57.86:3000/api/posts/" + localStorage.idPost.toString())
+        const res = await axios.get("http://localhost:3000/api/posts/" + localStorage.idPost.toString())
         if (res) {
             console.log(res.data.postIdInformation.post);
             setDataFromServer(res.data.postIdInformation.post[0])

@@ -20,7 +20,7 @@ function RegistrationPage() {
         axios.defaults.baseURL = 'http://localhost:3000/api';
 
         await axios.post(
-            `http://3.16.57.86:3000/api/registration`,
+            `http://localhost:3000/api/registration`,
             body
         );
         alert('Успешно');

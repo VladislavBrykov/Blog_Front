@@ -32,7 +32,7 @@ function AllPosts(params) {// Страница постов
         let formData = new FormData();
         formData.append("image", image);
 
-        let res = await axios.post('http://3.16.57.86:30000/api/uploud-image/1', formData, {
+        let res = await axios.post('http://localhost:30000/api/uploud-image/1', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
                 'Authorization': localStorage.jwtToken

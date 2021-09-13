@@ -32,7 +32,7 @@ export default ({ }) => {
 
     const body = { "start": start, "end": end, "title":title, "description": description} // То что передаем на сервер
     console.log(body);
-    axios.defaults.baseURL = 'http://3.16.57.86:3000/api';
+    axios.defaults.baseURL = 'http://localhost:3000/api';
 
     const res = await axios.post(
       `/event/` + params,

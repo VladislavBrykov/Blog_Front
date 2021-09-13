@@ -25,7 +25,7 @@ function PostsPage(params) {// Страница постов
     const [dataFromServer, setDataFromServer] = useState([]); //Используем хук состояния для данных с сервера
 
     const loadData = async () => { //Функция с запросом на сервер
-        const res = await axios.get("http://3.16.57.86:3000/api/posts?page=1&sort=standard")
+        const res = await axios.get("http://localhost:3000/api/posts?page=1&sort=standard")
 if(res) {
     console.log(res.data.allPosts.posts);
     setDataFromServer(res.data.allPosts.posts.reverse())
